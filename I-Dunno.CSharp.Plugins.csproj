@@ -61,8 +61,104 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween43">
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DemiLib">
+      <HintPath>Assets\Plugins\Demigiant\DemiLib\DemiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween50.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenPro">
+      <HintPath>Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween46">
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween46.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DAddCameraTargetAction.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DAdjustCameraTargetInfluenceAction.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DApplyInfluenceAction.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DApplyInfluencesTimedAction.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DCinematicsToggleAction.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DMoveCameraInstantlyToPositionAction.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DRemoveCameraTargetAction.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DShakeAction.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DShakeWithPresetAction.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DShakeWithValuesAction.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\BasePC2D.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\BaseTrigger.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\BoundariesAnimator.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\CameraTarget.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\EnumMovementAxis.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\EnumUpdateType.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\IPositionDeltaChanger.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\IPositionOverrider.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\IPostMover.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\IPreMover.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\ISizeDeltaChanger.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\ISizeOverrider.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\KDTree.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\MoveInColliderBoundaries.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\Utils\EditorPrefsX.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\Utils\PrefsData.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\Utils\Utils.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\ProCamera2DCameraWindow.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\ProCamera2DCinematics.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\ProCamera2DForwardFocus.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\ProCamera2DGeometryBoundaries.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\ProCamera2DLimitDistance.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\ProCamera2DLimitSpeed.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\ProCamera2DNumericBoundaries.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\ProCamera2DPanAndZoom.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\ProCamera2DParallax.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\ProCamera2DPixelPerfect.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\ProCamera2DPointerInfluence.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\ProCamera2DRails.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\ProCamera2DRepeater.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\ProCamera2DShake.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\ProCamera2DSpeedBasedZoom.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\ProCamera2DTransitionsFX.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\ProCamera2DZoomToFitTargets.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Helpers\Letterbox\ProCamera2DLetterbox.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Helpers\Parallax\ProCamera2DParallaxObject.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Helpers\Pixel Perfect\ProCamera2DPixelPerfectSprite.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Triggers\ProCamera2DTriggerBoundaries.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Triggers\ProCamera2DTriggerInfluence.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Triggers\ProCamera2DTriggerRails.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Triggers\ProCamera2DTriggerZoom.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\Platformer\Scripts\Player\PlayerController.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\Platformer\Scripts\Player\PlayerInput.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\Platformer\Scripts\Player\PlayerInputBot.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\Platformer\Scripts\ToggleCinematics.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\Platformer\Scripts\ToggleTransitionsFX.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\Door.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\DoorKey.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\Enemy\EnemyAttack.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\Enemy\EnemyFSM.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\Enemy\EnemyPatrol.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\Enemy\EnemySight.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\Enemy\EnemyWander.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\Enemy\PatrolWaypoint.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\GameOver.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\Goal.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\ObjectMove.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\ObjectRotate.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\Player\PlayerFire.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\Player\PlayerHealth.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\Player\PlayerInput.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\Pool\Pool.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\Pool\PoolMember.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\RotateTowardsMouse.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Examples\TopDownShooter\Scripts\SwitchCameraProjection.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\ProCamera2D.cs" />
     <Compile Include="Assets\Plugins\Ultimate Isometric Toolkit\Code\IsometricTools\Iso\GenericGridMap.cs" />
     <Compile Include="Assets\Plugins\Ultimate Isometric Toolkit\Code\IsometricTools\Iso\GridMap.cs" />
     <Compile Include="Assets\Plugins\Ultimate Isometric Toolkit\Code\IsometricTools\Iso\IsoDirection.cs" />
@@ -110,8 +206,18 @@
   <ItemGroup>
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\res\values\values.xml" />
-    <None Include="Assets\Plugins\PeopleModel\ReadMe (SD Citizen Characters - Volume01).txt" />
-    <None Include="Assets\Plugins\PeopleModel\Shaders\Sources\Shaders\Toony-Lighted.shader" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\DOTween.XML" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\DOTween43.xml" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\DOTween46.xml" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\DOTween50.xml" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.XML" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\readme.txt" />
+    <None Include="Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.XML" />
+    <None Include="Assets\Plugins\Demigiant\DOTweenPro\Editor\DOTweenProEditor.XML" />
+    <None Include="Assets\Plugins\Demigiant\DOTweenPro\readme.txt" />
+    <None Include="Assets\Plugins\Demigiant\DemiLib\DemiLib.xml" />
+    <None Include="Assets\Plugins\Demigiant\DemiLib\Editor\DemiEditor.XML" />
+    <None Include="Assets\Plugins\Demigiant\readme_DOTweenPro.txt" />
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\DepthOnly #00012.txt" />
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-Transparent-VertexLit #00018.txt" />
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-TransparentTwo-VertexLit #00009.txt" />
@@ -132,6 +238,13 @@
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Unlit #00017.txt" />
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-WrappedDiffuse-VertexLit #00016.txt" />
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\MaskedGrayscale #00011.txt" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\Letterbox\Resources\Letterbox.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Blinds.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Circle.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Fade.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Shutters.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Wipe.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\README.txt" />
     <None Include="Assets\Plugins\Ultimate Isometric Toolkit\ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

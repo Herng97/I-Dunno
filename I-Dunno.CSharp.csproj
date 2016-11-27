@@ -61,8 +61,23 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="Assembly-UnityScript-firstpass">
-      <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+    <Reference Include="DOTween43">
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DemiLib">
+      <HintPath>Assets\Plugins\Demigiant\DemiLib\DemiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween50.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenPro">
+      <HintPath>Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween46">
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween46.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -77,6 +92,7 @@
     <Compile Include="Assets\Scripts\Login\Client.cs" />
     <Compile Include="Assets\Scripts\Login\Login.cs" />
     <Compile Include="Assets\Scripts\Model\Account.cs" />
+    <Compile Include="Assets\Scripts\Model\Avatar.cs" />
     <Compile Include="Assets\ShopMenu.cs" />
     <Compile Include="Assets\ShowGPS.cs" />
     <Compile Include="Assets\World.cs" />
@@ -85,8 +101,18 @@
   <ItemGroup>
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\res\values\values.xml" />
-    <None Include="Assets\Plugins\PeopleModel\ReadMe (SD Citizen Characters - Volume01).txt" />
-    <None Include="Assets\Plugins\PeopleModel\Shaders\Sources\Shaders\Toony-Lighted.shader" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\DOTween.XML" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\DOTween43.xml" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\DOTween46.xml" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\DOTween50.xml" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.XML" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\readme.txt" />
+    <None Include="Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.XML" />
+    <None Include="Assets\Plugins\Demigiant\DOTweenPro\Editor\DOTweenProEditor.XML" />
+    <None Include="Assets\Plugins\Demigiant\DOTweenPro\readme.txt" />
+    <None Include="Assets\Plugins\Demigiant\DemiLib\DemiLib.xml" />
+    <None Include="Assets\Plugins\Demigiant\DemiLib\Editor\DemiEditor.XML" />
+    <None Include="Assets\Plugins\Demigiant\readme_DOTweenPro.txt" />
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\DepthOnly #00012.txt" />
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-Transparent-VertexLit #00018.txt" />
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-TransparentTwo-VertexLit #00009.txt" />
@@ -107,6 +133,13 @@
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Unlit #00017.txt" />
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-WrappedDiffuse-VertexLit #00016.txt" />
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\MaskedGrayscale #00011.txt" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\Letterbox\Resources\Letterbox.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Blinds.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Circle.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Fade.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Shutters.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Wipe.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\README.txt" />
     <None Include="Assets\Plugins\Ultimate Isometric Toolkit\ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

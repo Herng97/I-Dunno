@@ -30,18 +30,20 @@ public class World : MonoBehaviour
     public void onEnterWorld(Entity entity)
     {
 
-        if (entity is Account)
+        if (entity is KBEngine.Avatar)
         {
-            Account account = entity as Account;
-            account.renderObj=  Instantiate(AccountPrefab);
-            account.Player.entity = account;
+            KBEngine.Avatar avatar = entity as KBEngine.Avatar;
+            avatar.renderObj=  Instantiate(AccountPrefab);
+            avatar.Player.entity = avatar;
         }
     }
     public void updatePosition(KBEngine.Entity entity)
     {
-        if (entity is Account )
+
+        if (entity is KBEngine.Avatar)
         {
-            (entity as Account).Player.iso.Position = entity.position;
+            print(entity.position);
+            (entity as KBEngine.Avatar).Player.iso.Position = entity.position;
         }
 
     }
