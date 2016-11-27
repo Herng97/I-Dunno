@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using DG.Tweening;
+
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -12,26 +12,26 @@ public class ShopMenu : MonoBehaviour {
 	
     void OShop()
     {
-        transform.DOMoveY(275, 0.5f).SetDelay(0.5f);
+       // transform.DOMoveY(275, 0.5f).SetDelay(0.5f);
         run = false;
     }
     void CShop()
     {
-        transform.DOMoveY(-275, 0.5f).SetDelay(0.5f);
+       // transform.DOMoveY(-275, 0.5f).SetDelay(0.5f);
         run = true;
     }
     public void RunShop ()
     {
         if (run)
         {
-            transform.GetChild(1).DOLocalMoveY(-30, 0.5f).SetDelay(0.5f);
+         //   transform.GetChild(1).DOLocalMoveY(-30, 0.5f).SetDelay(0.5f);
             run = false;
             StartCoroutine(DoFade());
             //OShop();
         }
         else
         {
-            transform.GetChild(1).DOLocalMoveY(-550, 0.5f).SetDelay(0.5f);
+          //  transform.GetChild(1).DOLocalMoveY(-550, 0.5f).SetDelay(0.5f);
             run = true;
             StartCoroutine(DoFade());
             //CShop();
