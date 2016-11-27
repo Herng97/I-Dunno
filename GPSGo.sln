@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPSGo.CSharp", "GPSGo.CSharp.csproj", "{CCA052B2-4175-A62A-34E1-1F8D8A83EB2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPSGo.CSharp.Editor", "GPSGo.CSharp.Editor.csproj", "{C813FAAD-269B-0A78-9A73-659B6D049A1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCA052B2-4175-A62A-34E1-1F8D8A83EB2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCA052B2-4175-A62A-34E1-1F8D8A83EB2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCA052B2-4175-A62A-34E1-1F8D8A83EB2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCA052B2-4175-A62A-34E1-1F8D8A83EB2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C813FAAD-269B-0A78-9A73-659B6D049A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C813FAAD-269B-0A78-9A73-659B6D049A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C813FAAD-269B-0A78-9A73-659B6D049A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C813FAAD-269B-0A78-9A73-659B6D049A1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
