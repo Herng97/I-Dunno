@@ -10,6 +10,7 @@ public class World : MonoBehaviour
     {
         KBEngine.Event.registerOut("onEnterWorld", this, "onEnterWorld");
         KBEngine.Event.registerOut("onLeaveWorld", this, "onLeaveWorld");
+        KBEngine.Event.registerOut("updatePosition", this, "updatePosition");
         int[] keys = new int[KBEngineApp.app.entities.Keys.Count + 10];
         KBEngineApp.app.entities.Keys.CopyTo(keys, 0);
         for (int i = 0; i < keys.Length; i++)
@@ -28,7 +29,15 @@ public class World : MonoBehaviour
 
         if (entity is Account)
         {
-            Instantiate(AccountPrefab);
+            entity.renderObj=  Instantiate(AccountPrefab);
         }
+    }
+    public void updatePosition(KBEngine.Entity entity)
+    {
+        if (entity is Account )
+        {
+            (entity as Account).Player.iso.Position = entity.position;
+        }
+
     }
 }
