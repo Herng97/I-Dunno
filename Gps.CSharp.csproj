@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D90BCD6-2763-71DE-0A27-6E3C4E6641C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>5.4.1f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_1;UNITY_5_4;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_1;UNITY_5_4;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DemiLib">
+      <HintPath>Assets\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Demigiant\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween43">
+      <HintPath>Assets\Demigiant\DOTween\DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween46">
+      <HintPath>Assets\Demigiant\DOTween\DOTween46.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets\Demigiant\DOTween\DOTween50.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenPro">
+      <HintPath>Assets\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
+    <Compile Include="Assets\Floor.cs" />
+    <Compile Include="Assets\GpsSystem.cs" />
+    <Compile Include="Assets\ShopMenu.cs" />
+    <Compile Include="Assets\ShowGPS.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Iso\GenericGridMap.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Iso\GridMap.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Iso\IsoDirection.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Iso\IsoObject.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Iso\Isometric.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Iso\Tile.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\IsoCollision\IsoCollider.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\IsoController\AbstractIsoObjectController.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\IsoController\AdvancedIsoObjectController.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\IsoController\Node.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\IsoController\NodeIsoObjectController.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\IsoController\SimpleIsoObjectController.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\IsoController\TurnbasedIsoObjectController.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Other\Draggable.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Other\EasingFunctions.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Other\LevelGenerator.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Other\LevelLoader.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Other\MethodExtensionForMonoBehaviourTransform.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Other\Singleton.cs" />
+    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Other\TurnbasedSetup.cs" />
+    <Compile Include="Assets\player.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Demigiant\DOTween\DOTween.XML" />
+    <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />
+    <None Include="Assets\Demigiant\DOTween\DOTween46.xml" />
+    <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
+    <None Include="Assets\Demigiant\DOTween\Editor\DOTweenEditor.XML" />
+    <None Include="Assets\Demigiant\DOTween\readme.txt" />
+    <None Include="Assets\Demigiant\DOTweenPro\DOTweenPro.XML" />
+    <None Include="Assets\Demigiant\DOTweenPro\Editor\DOTweenProEditor.XML" />
+    <None Include="Assets\Demigiant\DOTweenPro\readme.txt" />
+    <None Include="Assets\Demigiant\DemiLib\Core\DemiLib.xml" />
+    <None Include="Assets\Demigiant\DemiLib\Core\Editor\DemiEditor.xml" />
+    <None Include="Assets\Demigiant\readme_DOTweenPro.txt" />
+    <None Include="Assets\PeopleModel\ReadMe (SD Citizen Characters - Volume01).txt" />
+    <None Include="Assets\PeopleModel\Shaders\Sources\Shaders\Toony-Lighted.shader" />
+    <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\res\values\values.xml" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\DepthOnly #00012.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-Transparent-VertexLit #00018.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-TransparentTwo-VertexLit #00009.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit #00015.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-EyeIris #00021.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-EyeIris-StencilCore #00004.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-EyePupil #00013.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-EyeShade #00014.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-EyeShade-StencilCore #00006.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-StencilCore #00020.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-Unlit #00007.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Environment-Toony-VertexLit #00005.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Environment-Toony-VertexLit-Rim #00003.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Environment-Transparent-Toony-VertexLit #00008.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Glass-Fallback #00010.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Glass-Fallback-Two #00002.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Toony-VertexLit #00019.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Unlit #00017.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-WrappedDiffuse-VertexLit #00016.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\MaskedGrayscale #00011.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Shared Assets\Shader\Alpha-Diffuse #000674.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Shared Assets\Shader\Alpha-VertexLit #000675.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Shared Assets\Shader\Buildings #000691.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Shared Assets\Shader\DepthOnly #10012.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Shared Assets\Shader\Ground #000713.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Shared Assets\Shader\Holo-BRDF #000712.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Shared Assets\Shader\Holo-BRDF_UBER #000697.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Shared Assets\Shader\Holo-Character-Transparent-VertexLit #10018.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Shared Assets\Shader\Holo-Character-TransparentTwo-VertexLit #10009.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Combining Split Assets\changelog.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Combining Split Assets\quickbms.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Combining Split Assets\unity.bms.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Examining, Modifying, or Extracting Assets\AssetsBundleExtractor_1.9_64bit\64bit\LodePNG_license.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Examining, Modifying, or Extracting Assets\AssetsBundleExtractor_1.9_64bit\64bit\README.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Examining, Modifying, or Extracting Assets\AssetsBundleExtractor_1.9_64bit\64bit\Usage.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Examining, Modifying, or Extracting Assets\AssetsBundleExtractor_1.9_64bit\64bit\crunch_license.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Examining, Modifying, or Extracting Assets\AssetsBundleExtractor_1.9_64bit\64bit\libsquish_license.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Examining, Modifying, or Extracting Assets\AssetsBundleExtractor_1.9_64bit\64bit\license.txt" />
+    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Examining, Modifying, or Extracting Assets\AssetsBundleExtractor_1.9_64bit\64bit\lz4_license.txt" />
+    <None Include="Assets\Ultimate Isometric Toolkit\ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
+</Project>
