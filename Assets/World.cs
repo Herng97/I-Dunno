@@ -24,12 +24,17 @@ public class World : MonoBehaviour
     }
     public GameObject AccountPrefab;
     // Update is called once per frame
-    void onEnterWorld(Entity entity)
+    public void onLeaveWorld(Entity entity)
+    {
+    }
+    public void onEnterWorld(Entity entity)
     {
 
         if (entity is Account)
         {
-            entity.renderObj=  Instantiate(AccountPrefab);
+            Account account = entity as Account;
+            account.renderObj=  Instantiate(AccountPrefab);
+            account.Player.entity = account;
         }
     }
     public void updatePosition(KBEngine.Entity entity)

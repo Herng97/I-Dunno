@@ -94,92 +94,53 @@
     <Reference Include="DOTweenPro">
       <HintPath>Assets\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
     </Reference>
+    <Reference Include="Assembly-UnityScript-firstpass">
+      <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
+    <ProjectReference Include="Gps.CSharp.Plugins.csproj">
+      <Project>{CA184A02-3369-C580-30FA-3BD8C09841B3}</Project>
+      <Name>Gps.CSharp.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\Floor.cs" />
     <Compile Include="Assets\GpsSystem.cs" />
+    <Compile Include="Assets\Scripts\Login\Client.cs" />
+    <Compile Include="Assets\Scripts\Login\Login.cs" />
+    <Compile Include="Assets\Scripts\Model\Account.cs" />
     <Compile Include="Assets\ShopMenu.cs" />
     <Compile Include="Assets\ShowGPS.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Iso\GenericGridMap.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Iso\GridMap.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Iso\IsoDirection.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Iso\IsoObject.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Iso\Isometric.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Iso\Tile.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\IsoCollision\IsoCollider.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\IsoController\AbstractIsoObjectController.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\IsoController\AdvancedIsoObjectController.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\IsoController\Node.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\IsoController\NodeIsoObjectController.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\IsoController\SimpleIsoObjectController.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\IsoController\TurnbasedIsoObjectController.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Other\Draggable.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Other\EasingFunctions.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Other\LevelGenerator.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Other\LevelLoader.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Other\MethodExtensionForMonoBehaviourTransform.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Other\Singleton.cs" />
-    <Compile Include="Assets\Ultimate Isometric Toolkit\Code\IsometricTools\Other\TurnbasedSetup.cs" />
+    <Compile Include="Assets\World.cs" />
     <Compile Include="Assets\player.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Demigiant\DOTween\DOTween.XML" />
-    <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />
-    <None Include="Assets\Demigiant\DOTween\DOTween46.xml" />
-    <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
-    <None Include="Assets\Demigiant\DOTween\Editor\DOTweenEditor.XML" />
-    <None Include="Assets\Demigiant\DOTween\readme.txt" />
-    <None Include="Assets\Demigiant\DOTweenPro\DOTweenPro.XML" />
-    <None Include="Assets\Demigiant\DOTweenPro\Editor\DOTweenProEditor.XML" />
-    <None Include="Assets\Demigiant\DOTweenPro\readme.txt" />
-    <None Include="Assets\Demigiant\DemiLib\Core\DemiLib.xml" />
-    <None Include="Assets\Demigiant\DemiLib\Core\Editor\DemiEditor.xml" />
-    <None Include="Assets\Demigiant\readme_DOTweenPro.txt" />
-    <None Include="Assets\PeopleModel\ReadMe (SD Citizen Characters - Volume01).txt" />
-    <None Include="Assets\PeopleModel\Shaders\Sources\Shaders\Toony-Lighted.shader" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\res\values\values.xml" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\DepthOnly #00012.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-Transparent-VertexLit #00018.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-TransparentTwo-VertexLit #00009.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit #00015.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-EyeIris #00021.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-EyeIris-StencilCore #00004.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-EyePupil #00013.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-EyeShade #00014.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-EyeShade-StencilCore #00006.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-StencilCore #00020.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-Unlit #00007.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Environment-Toony-VertexLit #00005.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Environment-Toony-VertexLit-Rim #00003.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Environment-Transparent-Toony-VertexLit #00008.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Glass-Fallback #00010.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Glass-Fallback-Two #00002.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Toony-VertexLit #00019.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Unlit #00017.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-WrappedDiffuse-VertexLit #00016.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\MaskedGrayscale #00011.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Shared Assets\Shader\Alpha-Diffuse #000674.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Shared Assets\Shader\Alpha-VertexLit #000675.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Shared Assets\Shader\Buildings #000691.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Shared Assets\Shader\DepthOnly #10012.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Shared Assets\Shader\Ground #000713.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Shared Assets\Shader\Holo-BRDF #000712.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Shared Assets\Shader\Holo-BRDF_UBER #000697.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Shared Assets\Shader\Holo-Character-Transparent-VertexLit #10018.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Shared Assets\Shader\Holo-Character-TransparentTwo-VertexLit #10009.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Combining Split Assets\changelog.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Combining Split Assets\quickbms.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Combining Split Assets\unity.bms.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Examining, Modifying, or Extracting Assets\AssetsBundleExtractor_1.9_64bit\64bit\LodePNG_license.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Examining, Modifying, or Extracting Assets\AssetsBundleExtractor_1.9_64bit\64bit\README.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Examining, Modifying, or Extracting Assets\AssetsBundleExtractor_1.9_64bit\64bit\Usage.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Examining, Modifying, or Extracting Assets\AssetsBundleExtractor_1.9_64bit\64bit\crunch_license.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Examining, Modifying, or Extracting Assets\AssetsBundleExtractor_1.9_64bit\64bit\libsquish_license.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Examining, Modifying, or Extracting Assets\AssetsBundleExtractor_1.9_64bit\64bit\license.txt" />
-    <None Include="Assets\Pokemon-GO-App-Assets-and-Images-master\Tools\For Examining, Modifying, or Extracting Assets\AssetsBundleExtractor_1.9_64bit\64bit\lz4_license.txt" />
-    <None Include="Assets\Ultimate Isometric Toolkit\ReadMe.txt" />
+    <None Include="Assets\Plugins\PeopleModel\ReadMe (SD Citizen Characters - Volume01).txt" />
+    <None Include="Assets\Plugins\PeopleModel\Shaders\Sources\Shaders\Toony-Lighted.shader" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\DepthOnly #00012.txt" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-Transparent-VertexLit #00018.txt" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-TransparentTwo-VertexLit #00009.txt" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit #00015.txt" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-EyeIris #00021.txt" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-EyeIris-StencilCore #00004.txt" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-EyePupil #00013.txt" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-EyeShade #00014.txt" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-EyeShade-StencilCore #00006.txt" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-StencilCore #00020.txt" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-VertexLit-Unlit #00007.txt" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Environment-Toony-VertexLit #00005.txt" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Environment-Toony-VertexLit-Rim #00003.txt" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Environment-Transparent-Toony-VertexLit #00008.txt" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Glass-Fallback #00010.txt" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Glass-Fallback-Two #00002.txt" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Toony-VertexLit #00019.txt" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Unlit #00017.txt" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-WrappedDiffuse-VertexLit #00016.txt" />
+    <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\MaskedGrayscale #00011.txt" />
+    <None Include="Assets\Plugins\Ultimate Isometric Toolkit\ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
