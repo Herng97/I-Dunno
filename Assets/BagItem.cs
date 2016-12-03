@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using KBEngine;
 public class BagItem : MonoBehaviour {
     public byte Index;
     public byte Id;
@@ -8,6 +9,10 @@ public class BagItem : MonoBehaviour {
     void Start () {
         GetComponent<Image>().sprite = Resources.Load<Sprite>("bagIcon\\" + Id);
 	}
-	
+    public void Use()
+    {
+        Debug.LogError("1111");
+        ((KBEngine.Avatar)KBEngineApp.app.player()).ReqUse(Index);
+    }
 
 }
