@@ -105,6 +105,7 @@
     <Compile Include="Assets\BagUI.cs" />
     <Compile Include="Assets\Floor.cs" />
     <Compile Include="Assets\GpsSystem.cs" />
+    <Compile Include="Assets\List_Item_Coin.cs" />
     <Compile Include="Assets\Scripts\Login\Client.cs" />
     <Compile Include="Assets\Scripts\Login\Login.cs" />
     <Compile Include="Assets\Scripts\Model\Account.cs" />
