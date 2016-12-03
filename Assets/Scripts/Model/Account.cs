@@ -11,7 +11,7 @@
     public class Account : Entity
     {
 
-        public override void __init__()
+       protected override void __init__()
         {
             base.__init__();
             if (isPlayer())

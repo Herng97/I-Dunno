@@ -144,7 +144,7 @@
 			Pair pair = new Pair();
 			pair.obj = obj;
 			pair.funcname = funcname;
-			pair.method = obj.GetType().GetMethod(funcname);
+			pair.method = obj.GetType().GetMethod(funcname, System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Public);
 			if(pair.method == null)
 			{
 				Dbg.ERROR_MSG("Event::register: " + obj + "not found method[" + funcname + "]");
