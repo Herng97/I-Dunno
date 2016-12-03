@@ -114,6 +114,7 @@
     <Compile Include="Assets\Scripts\Model\Plant.cs" />
     <Compile Include="Assets\ShopMenu.cs" />
     <Compile Include="Assets\ShowGPS.cs" />
+    <Compile Include="Assets\UseItem.cs" />
     <Compile Include="Assets\World.cs" />
     <Compile Include="Assets\player.cs" />
   </ItemGroup>

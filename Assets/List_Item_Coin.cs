@@ -31,7 +31,6 @@ public class List_Item_Coin : MonoBehaviour {
             bitems.Index =  i;
             bitems.Id = (byte)bag[i];
         }
-        //Resources.Load("bagIcon/"+id,typeof(Sprite)) 拉(Assets/REsource/BagIcon)地下的icon
     }
 
     void OnDestroy()
