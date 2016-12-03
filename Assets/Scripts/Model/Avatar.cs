@@ -43,7 +43,6 @@
         public void set_coin(object old)
         {
             Event.fireOut("set_Coin", this);
-            Dbg.ERROR_MSG("!");
         }
         public void set_bag(object old)
         {

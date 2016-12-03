@@ -1,18 +1,37 @@
 ﻿using UnityEngine;
 using System.Collections;
 using KBEngine;
-public class List_Item_Coin : MonoBehaviour {
+using UnityEngine.UI;
+using System.Collections.Generic;
 
-	// Use this for initialization
-	void Start () {
+public class List_Item_Coin : MonoBehaviour {
+    public GameObject ItemPrefab;
+    public Transform Items;
+    public Text CoinText;
+    // Use this for initialization
+    void Start () {
         set_Coin((KBEngine.Avatar)KBEngineApp.app.player());
+        set_Bag((KBEngine.Avatar)KBEngineApp.app.player());
         KBEngine.Event.registerOut("set_Coin", this, "set_Coin");
-	}
+        KBEngine.Event.registerOut("set_Bag", this, "set_Bag");
+    }
     public void set_Coin(KBEngine.Avatar avatar)
     {
-        print(avatar.Coin);
+        CoinText.text = avatar.Coin.ToString();
 
-        //Resources.Load("bagIcon/"+id,typeof(Sprite)) 拉(Assest/REsource/BagIcon)地下的icon
+    }
+    public void set_Bag(KBEngine.Avatar avatar)
+    {
+
+        List<object> bag = avatar.Bag;
+        for(byte i=0;i<bag.Count; i++)
+        {
+            var obj = Instantiate(ItemPrefab, Items) as GameObject;
+            BagItem bitems =  obj.GetComponent<BagItem>();
+            bitems.Index =  i;
+            bitems.Id = (byte)bag[i];
+        }
+        //Resources.Load("bagIcon/"+id,typeof(Sprite)) 拉(Assets/REsource/BagIcon)地下的icon
     }
 
     void OnDestroy()
