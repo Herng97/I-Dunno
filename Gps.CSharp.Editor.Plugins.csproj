@@ -131,34 +131,31 @@
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="DemiLib">
-      <HintPath>Assets\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
+      <HintPath>Assets\Plugins\Demigiant\DemiLib\DemiLib.dll</HintPath>
     </Reference>
     <Reference Include="DemiEditor">
-      <HintPath>Assets\Demigiant\DemiLib\Core\Editor\DemiEditor.dll</HintPath>
+      <HintPath>Assets\Plugins\Demigiant\DemiLib\Editor\DemiEditor.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
-      <HintPath>Assets\Demigiant\DOTween\DOTween.dll</HintPath>
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
     <Reference Include="DOTween43">
-      <HintPath>Assets\Demigiant\DOTween\DOTween43.dll</HintPath>
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween43.dll</HintPath>
     </Reference>
     <Reference Include="DOTween46">
-      <HintPath>Assets\Demigiant\DOTween\DOTween46.dll</HintPath>
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween46.dll</HintPath>
     </Reference>
     <Reference Include="DOTween50">
-      <HintPath>Assets\Demigiant\DOTween\DOTween50.dll</HintPath>
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween50.dll</HintPath>
     </Reference>
     <Reference Include="DOTweenEditor">
-      <HintPath>Assets\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
+      <HintPath>Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
     </Reference>
     <Reference Include="DOTweenPro">
-      <HintPath>Assets\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
+      <HintPath>Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
     </Reference>
     <Reference Include="DOTweenProEditor">
-      <HintPath>Assets\Demigiant\DOTweenPro\Editor\DOTweenProEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-UnityScript-firstpass">
-      <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+      <HintPath>Assets\Plugins\Demigiant\DOTweenPro\Editor\DOTweenProEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -172,6 +169,36 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Plugins\Demigiant\DOTweenPro\Editor\DOTweenAnimationInspector.cs" />
+    <Compile Include="Assets\Plugins\Demigiant\Editor\WelcomeScreen.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\Editor\CleanupMissingScripts.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\Editor\ProCamera2DEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\Editor\ProCamera2DEditorHelper.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\Editor\ProCamera2DEditorResources.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\Editor\ProCamera2DHierarchyIcon.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Core\Editor\ProCamera2DPrefs.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DCameraWindowEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DCinematicsEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DForwardFocusEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DGeometryBoundariesEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DLimitDistanceEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DLimitSpeedEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DNumericBoundariesEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DPanAndZoomEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DParallaxEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DPixelPerfectEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DPointerInfluenceEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DRailsEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DRepeaterEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DShakeEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DSpeedBasedZoomEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DTransitionsFXEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Extensions\Editor\ProCamera2DZoomToFitTargetsEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Helpers\Pixel Perfect\Editor\ProCamera2DPixelPerfectSpriteEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Triggers\Editor\ProCamera2DTriggerBoundariesEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Triggers\Editor\ProCamera2DTriggerInfluenceEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Triggers\Editor\ProCamera2DTriggerRailsEditor.cs" />
+    <Compile Include="Assets\Plugins\ProCamera2D\Code\Triggers\Editor\ProCamera2DTriggerZoomEditor.cs" />
     <Compile Include="Assets\Plugins\Ultimate Isometric Toolkit\Editor\IsoObjectEditor.cs" />
     <Compile Include="Assets\Plugins\Ultimate Isometric Toolkit\Editor\IsoSnapping.cs" />
     <Compile Include="Assets\Plugins\Ultimate Isometric Toolkit\Editor\LevelGeneratorEditor.cs" />
@@ -181,8 +208,18 @@
   <ItemGroup>
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\res\values\values.xml" />
-    <None Include="Assets\Plugins\PeopleModel\ReadMe (SD Citizen Characters - Volume01).txt" />
-    <None Include="Assets\Plugins\PeopleModel\Shaders\Sources\Shaders\Toony-Lighted.shader" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\DOTween.XML" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\DOTween43.xml" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\DOTween46.xml" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\DOTween50.xml" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.XML" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\readme.txt" />
+    <None Include="Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.XML" />
+    <None Include="Assets\Plugins\Demigiant\DOTweenPro\Editor\DOTweenProEditor.XML" />
+    <None Include="Assets\Plugins\Demigiant\DOTweenPro\readme.txt" />
+    <None Include="Assets\Plugins\Demigiant\DemiLib\DemiLib.xml" />
+    <None Include="Assets\Plugins\Demigiant\DemiLib\Editor\DemiEditor.XML" />
+    <None Include="Assets\Plugins\Demigiant\readme_DOTweenPro.txt" />
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\DepthOnly #00012.txt" />
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-Transparent-VertexLit #00018.txt" />
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-TransparentTwo-VertexLit #00009.txt" />
@@ -203,6 +240,13 @@
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Unlit #00017.txt" />
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-WrappedDiffuse-VertexLit #00016.txt" />
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\MaskedGrayscale #00011.txt" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\Letterbox\Resources\Letterbox.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Blinds.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Circle.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Fade.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Shutters.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Wipe.shader" />
+    <None Include="Assets\Plugins\ProCamera2D\README.txt" />
     <None Include="Assets\Plugins\Ultimate Isometric Toolkit\ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
