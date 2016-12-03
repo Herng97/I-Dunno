@@ -6,7 +6,7 @@ public class World : MonoBehaviour
 {
 
     // Use this for initialization
-    void Awake()
+    void Start()
     {
         KBEngine.Event.registerOut("onEnterWorld", this, "onEnterWorld");
         KBEngine.Event.registerOut("onLeaveWorld", this, "onLeaveWorld");
@@ -19,6 +19,7 @@ public class World : MonoBehaviour
             if (KBEngineApp.app.entities.TryGetValue(keys[i], out entity))
             {
                 onEnterWorld(entity);
+                entity.callPropertysSetMethods();
             }
         }
     }

@@ -20,8 +20,8 @@
                 return _player;
             }
         }
-        public int  Coin{ get {return (int)getDefinedProperty("Coin"); } }
-        public List<object> Bag { get { return (List<object>)getDefinedProperty("Bag"); } }
+        public int Coin { get { return (int)getDefinedProperty("coin"); } }
+        public List<object> Bag { get { return (List<object>)getDefinedProperty("bag"); } }
         public void ReqUse(byte index)
         {
             baseCall("reqUse", index, Player.iso.Position);
@@ -37,9 +37,17 @@
         }
         internal void UpdatePlayer(Vector3 position)
         {
-       
+
             this.position = position;
         }
-
+        public void set_coin(object old)
+        {
+            Event.fireOut("set_Coin", this);
+            Dbg.ERROR_MSG("!");
+        }
+        public void set_bag(object old)
+        {
+            Event.fireOut("set_Bag", this);
+        }
     }
 }

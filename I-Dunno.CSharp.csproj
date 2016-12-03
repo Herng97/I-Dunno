@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>5.4.1f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -61,23 +63,23 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="DOTween43">
-      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween43.dll</HintPath>
-    </Reference>
     <Reference Include="DemiLib">
       <HintPath>Assets\Plugins\Demigiant\DemiLib\DemiLib.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween50">
-      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween50.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
-    <Reference Include="DOTweenPro">
-      <HintPath>Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
+    <Reference Include="DOTween43">
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween43.dll</HintPath>
     </Reference>
     <Reference Include="DOTween46">
       <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween46.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween50.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenPro">
+      <HintPath>Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -87,10 +89,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BagUI.cs" />
     <Compile Include="Assets\Floor.cs" />
     <Compile Include="Assets\GpsSystem.cs" />
     <Compile Include="Assets\Scripts\Login\Client.cs" />
     <Compile Include="Assets\Scripts\Login\Login.cs" />
+    <Compile Include="Assets\Scripts\Model\Plant.cs" />
     <Compile Include="Assets\Scripts\Model\Account.cs" />
     <Compile Include="Assets\Scripts\Model\Avatar.cs" />
     <Compile Include="Assets\ShopMenu.cs" />

@@ -110,6 +110,7 @@
     <Compile Include="Assets\Scripts\Login\Login.cs" />
     <Compile Include="Assets\Scripts\Model\Account.cs" />
     <Compile Include="Assets\Scripts\Model\Avatar.cs" />
+    <Compile Include="Assets\Scripts\Model\Plant.cs" />
     <Compile Include="Assets\ShopMenu.cs" />
     <Compile Include="Assets\ShowGPS.cs" />
     <Compile Include="Assets\World.cs" />
