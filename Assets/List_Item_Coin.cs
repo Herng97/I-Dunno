@@ -22,6 +22,11 @@ public class List_Item_Coin : MonoBehaviour {
     }
     public void set_Bag(KBEngine.Avatar avatar)
     {
+        for(int i=0; i< Items.childCount ;i++)
+        {
+            Destroy(Items.GetChild(i).gameObject);
+        }
+
 
         List<object> bag = avatar.Bag;
         for(byte i=0;i<bag.Count; i++)
@@ -31,6 +36,7 @@ public class List_Item_Coin : MonoBehaviour {
             bitems.Index =  i;
             bitems.Id = (byte)bag[i];
         }
+
     }
 
     void OnDestroy()

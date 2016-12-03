@@ -11,8 +11,8 @@ public class BagItem : MonoBehaviour {
 	}
     public void Use()
     {
-        Debug.LogError("1111");
         ((KBEngine.Avatar)KBEngineApp.app.player()).ReqUse(Index);
+
     }
 
 }
