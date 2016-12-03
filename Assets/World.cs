@@ -24,6 +24,8 @@ public class World : MonoBehaviour
         }
     }
     public GameObject AccountPrefab;
+    public GameObject ShopPrefab;
+    public GameObject PlantPrefab;
     // Update is called once per frame
     public void onLeaveWorld(Entity entity)
     {
@@ -37,6 +39,20 @@ public class World : MonoBehaviour
             avatar.renderObj=  Instantiate(AccountPrefab);
             avatar.Player.entity = (KBEngine.Avatar)avatar;
         }
+
+        if (entity is KBEngine.Shop)
+        {
+            Shop shop = entity as Shop;
+            shop.renderObj = Instantiate(ShopPrefab);
+            shop.Unit.Shop = shop;
+        }
+        if (entity is KBEngine.Plant)
+        {
+            Plant plant = entity as Plant;
+            plant.renderObj = Instantiate(ShopPrefab);
+            plant.Unit.Plant = plant;
+        }
+
     }
     public void updatePosition(KBEngine.Entity entity)
     {

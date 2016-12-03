@@ -10,6 +10,17 @@
 
     public class Plant : Entity
     {
+        PlantUnit _unit;
+        public PlantUnit Unit
+        {
+            get
+            {
+                if (_unit == null && renderObj != null)
+                    _unit = ((GameObject)renderObj).GetComponent<PlantUnit>();
+                return _unit;
+            }
+        }
+
         public byte Id { get { return (byte)getDefinedProperty("Id"); } }
         public byte Level { get { return (byte)getDefinedProperty("level"); } }
         public bool IsWater { get { return System.Convert.ToBoolean(getDefinedProperty("isWater")); } }
