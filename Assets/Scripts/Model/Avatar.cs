@@ -20,7 +20,13 @@
                 return _player;
             }
         }
-        public override void __init__()
+        public int  Coin{ get {return (int)getDefinedProperty("Coin"); } }
+        public List<object> Bag { get { return (List<object>)getDefinedProperty("Bag"); } }
+        public void ReqUse(byte index)
+        {
+            baseCall("reqUse", index, Player.iso.Position);
+        }
+        protected override void __init__()
         {
             base.__init__();
             if (isPlayer())
@@ -29,7 +35,7 @@
                 Event.registerIn("UpdatePlayer", this, "UpdatePlayer");
             }
         }
-        public void UpdatePlayer(Vector3 position)
+        internal void UpdatePlayer(Vector3 position)
         {
        
             this.position = position;

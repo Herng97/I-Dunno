@@ -34,7 +34,7 @@ public class World : MonoBehaviour
         {
             KBEngine.Avatar avatar = entity as KBEngine.Avatar;
             avatar.renderObj=  Instantiate(AccountPrefab);
-            avatar.Player.entity = avatar;
+            avatar.Player.entity = (KBEngine.Avatar)avatar;
         }
     }
     public void updatePosition(KBEngine.Entity entity)

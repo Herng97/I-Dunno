@@ -1,15 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-
-using KBEngine;
 using Com.LuisPedroFonseca.ProCamera2D;
 
 public class player : MonoBehaviour
 {
 
     public IsoObject iso;
-    public Entity entity;
+    public KBEngine.Avatar entity;
     public GpsSystem GPS;
     Vector3 StartPoint;// = new Vector3(120.6499191f,24.1791539f,1);
 
@@ -40,7 +38,7 @@ public class player : MonoBehaviour
 
             }
             KBEngine.Event.fireIn("UpdatePlayer", iso.Position);
-
+    
         }
 
     }
