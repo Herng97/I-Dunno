@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using DG.Tweening;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -10,32 +10,19 @@ public class ShopMenu : MonoBehaviour {
     void Start () {
 	}
 	
-    void OShop()
-    {
-       // transform.DOMoveY(275, 0.5f).SetDelay(0.5f);
-        run = false;
-    }
-    void CShop()
-    {
-       // transform.DOMoveY(-275, 0.5f).SetDelay(0.5f);
-        run = true;
-    }
     public void RunShop ()
     {
         if (run)
         {
-         //   transform.GetChild(1).DOLocalMoveY(-30, 0.5f).SetDelay(0.5f);
+            transform.GetChild(5).DOLocalMoveX(0, 0.5f).SetDelay(0.5f);
             run = false;
-            StartCoroutine(DoFade());
-            //OShop();
         }
         else
         {
-          //  transform.GetChild(1).DOLocalMoveY(-550, 0.5f).SetDelay(0.5f);
+            transform.GetChild(5).DOLocalMoveX(-520, 0.5f).SetDelay(0.5f);
             run = true;
-            StartCoroutine(DoFade());
-            //CShop();
         }
+        StartCoroutine(DoFade());
 
     }
     // Update is called once per frame
@@ -45,8 +32,8 @@ public class ShopMenu : MonoBehaviour {
 
     IEnumerator DoFade()
     {
-        CanvasGroup[] ShopUI = GameObject.Find("ShopCanvas/ShopUI").GetComponentsInChildren<CanvasGroup>();
-        Button[] ShopButton = GameObject.Find("ShopCanvas/btnShop").GetComponents<Button>();
+        CanvasGroup[] ShopUI = GameObject.Find("ShopMenu").GetComponentsInChildren<CanvasGroup>();
+        Button[] BagButton = GameObject.Find("btnBag").GetComponents<Button>();
         if (run)
         {
             while (ShopUI[0].alpha > 0)
@@ -55,7 +42,7 @@ public class ShopMenu : MonoBehaviour {
                 yield return null;
             }
             ShopUI[0].interactable = false;
-            ShopButton[0].interactable = true;
+            BagButton[0].interactable = true;
             yield return null;
         }
         else
@@ -66,7 +53,7 @@ public class ShopMenu : MonoBehaviour {
                 yield return null;
             }
             ShopUI[0].interactable = true;
-            ShopButton[0].interactable = false;
+            BagButton[0].interactable = false;
             yield return null;
         }
     }
