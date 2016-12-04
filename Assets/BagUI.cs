@@ -14,12 +14,12 @@ public class BagUI : MonoBehaviour
     {
         if (run)
         {
-            transform.GetChild(3).DOLocalMoveY(0, 0.5f).SetDelay(0.5f);
+            transform.GetChild(3).DOLocalMoveY(0, 0.5f);
             run = false;
         }
         else
         {
-            transform.GetChild(3).DOLocalMoveY(-600, 0.5f).SetDelay(0.5f);
+            transform.GetChild(3).DOLocalMoveY(-600, 0.5f);
             run = true;
         }
         StartCoroutine(DoFade());

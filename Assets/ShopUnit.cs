@@ -13,4 +13,8 @@ public class ShopUnit : MonoBehaviour {
 	void Update () {
 	
 	}
+    void OnTap(TapGesture gesture)
+    {
+        KBEngine.Event.fireOut("OpenShop",Shop);
+    }
 }

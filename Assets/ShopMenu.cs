@@ -3,27 +3,34 @@ using System.Collections;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using KBEngine;
 
 public class ShopMenu : MonoBehaviour {
     bool run=true;
     // Use this for initialization
-    void Start () {
+    void Awake () {
+        KBEngine.Event.registerOut("OpenShop", this, "RunShop");
 	}
 	
-    public void RunShop ()
+    public void RunShop (Shop shop)
     {
+       
         if (run)
         {
-            transform.GetChild(5).DOLocalMoveX(0, 0.5f).SetDelay(0.5f);
+            transform.GetChild(4).DOLocalMoveX(0, 0.5f);
             run = false;
         }
         else
         {
-            transform.GetChild(5).DOLocalMoveX(-520, 0.5f).SetDelay(0.5f);
+            transform.GetChild(4).DOLocalMoveX(-520, 0.5f);
             run = true;
         }
         StartCoroutine(DoFade());
 
+    }
+    void OnDestroy()
+    {
+        KBEngine.Event.deregisterOut(this);
     }
     // Update is called once per frame
     void Update()
