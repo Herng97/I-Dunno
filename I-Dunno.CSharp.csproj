@@ -99,6 +99,7 @@
     <Compile Include="Assets\Scripts\Model\Avatar.cs" />
     <Compile Include="Assets\Scripts\Model\Plant.cs" />
     <Compile Include="Assets\Scripts\Model\Shop.cs" />
+    <Compile Include="Assets\ShopItems.cs" />
     <Compile Include="Assets\ShopMenu.cs" />
     <Compile Include="Assets\ShopUnit.cs" />
     <Compile Include="Assets\ShowGPS.cs" />
