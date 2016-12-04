@@ -26,6 +26,10 @@
         {
             baseCall("reqUse", index, Player.iso.Position);
         }
+        public void ReqBuy(byte id,byte price)
+        {
+            baseCall("reqBuy", id, price);
+        }
         protected override void __init__()
         {
             base.__init__();

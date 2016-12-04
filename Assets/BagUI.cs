@@ -35,24 +35,24 @@ public class BagUI : MonoBehaviour
         Button[] btnBag = GameObject.Find("btnBag").GetComponents<Button>();
         if (run)
         {
+            BagUI[0].interactable = false;
+            btnBag[0].interactable = true;
             while (BagUI[0].alpha > 0)
             {
                 BagUI[0].alpha -= Time.deltaTime / 1;
                 yield return null;
             }
-            BagUI[0].interactable = false;
-            btnBag[0].interactable = true;
             yield return null;
         }
         else
         {
+            BagUI[0].interactable = true;
+            btnBag[0].interactable = false;
             while (BagUI[0].alpha < 1)
             {
                 BagUI[0].alpha += Time.deltaTime / 1;
                 yield return null;
             }
-            BagUI[0].interactable = true;
-            btnBag[0].interactable = false;
             yield return null;
         }
     }

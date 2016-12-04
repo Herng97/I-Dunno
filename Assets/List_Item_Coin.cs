@@ -17,7 +17,6 @@ public class List_Item_Coin : MonoBehaviour {
     }
     public void set_Coin(KBEngine.Avatar avatar)
     {
-
         CoinText.text = avatar.Coin.ToString();
 
     }
@@ -37,6 +36,7 @@ public class List_Item_Coin : MonoBehaviour {
             bitems.Index =  i;
             bitems.Id = (byte)bag[i];
         }
+
 
     }
 
