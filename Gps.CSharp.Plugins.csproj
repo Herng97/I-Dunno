@@ -254,6 +254,7 @@
     <Compile Include="Assets\Plugins\kbengine_unity3d_plugins-master\ScriptModule.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\FX Mega Pack\FX Mega Pack - Readme.txt" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\res\values\values.xml" />
     <None Include="Assets\Plugins\Demigiant\DOTween\DOTween.XML" />
@@ -268,7 +269,6 @@
     <None Include="Assets\Plugins\Demigiant\DemiLib\DemiLib.xml" />
     <None Include="Assets\Plugins\Demigiant\DemiLib\Editor\DemiEditor.XML" />
     <None Include="Assets\Plugins\Demigiant\readme_DOTweenPro.txt" />
-    <None Include="Assets\Plugins\FX Mega Pack\FX Mega Pack - Readme.txt" />
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\DepthOnly #00012.txt" />
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-Transparent-VertexLit #00018.txt" />
     <None Include="Assets\Plugins\Pokemon-GO-App-Assets-and-Images-master\Global Game Managers\Shader\Holo-Character-TransparentTwo-VertexLit #00009.txt" />
