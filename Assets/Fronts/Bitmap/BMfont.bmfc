@@ -1,0 +1,95 @@
+# AngelCode Bitmap Font Generator configuration file
+fileVersion=1
+
+# font settings
+fontName=Arial
+fontFile=
+charSet=0
+fontSize=32
+aa=1
+scaleH=100
+useSmoothing=1
+isBold=0
+isItalic=0
+useUnicode=1
+disableBoxChars=1
+outputInvalidCharGlyph=0
+dontIncludeKerningPairs=0
+useHinting=1
+renderFromOutline=0
+useClearType=1
+
+# character alignment
+paddingDown=1
+paddingUp=1
+paddingRight=1
+paddingLeft=1
+spacingHoriz=1
+spacingVert=1
+useFixedHeight=0
+forceZero=0
+
+# output file
+outWidth=1000
+outHeight=256
+outBitDepth=32
+fontDescFormat=0
+fourChnlPacked=0
+textureFormat=png
+textureCompression=0
+alphaChnl=1
+redChnl=0
+greenChnl=0
+blueChnl=0
+invA=0
+invR=0
+invG=0
+invB=0
+
+# outline
+outlineThickness=0
+
+# selected chars
+chars=33,43,45,48-57,65-90,99
+
+# imported icon images
+icon="../../../../../../../Users/hadea/Desktop/New folder/33__.png",33,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/43_+.png",43,0,11,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/45_-.png",45,0,21,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/48_0.png",48,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/49_1.png",49,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/50_2.png",50,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/51_3.png",51,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/52_4.png",52,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/53_5.png",53,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/54_6.png",54,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/55_7.png",55,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/57_9.png",57,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/56_8.png",56,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/65_A.png",65,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/66_B.png",66,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/67_C.png",67,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/68_D.png",68,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/69_E.png",69,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/70_F.png",70,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/71_G.png",71,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/72_H.png",72,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/73_I.png",73,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/74_J.png",74,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/75_K.png",75,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/76_L.png",76,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/77_M.png",77,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/78_N.png",78,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/79_O.png",79,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/80_P.png",80,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/81_Q.png",81,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/82_R.png",82,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/83_S.png",83,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/84_T.png",84,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/85_U.png",85,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/86_V.png",86,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/87_W.png",87,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/88_X.png",88,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/89_Y.png",89,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/90_Z.png",90,0,0,0
+icon="../../../../../../../Users/hadea/Desktop/New folder/99_c.png",99,0,0,0

@@ -24,6 +24,7 @@
         public List<object> Bag { get { return (List<object>)getDefinedProperty("bag"); } }
         public void ReqUse(byte index)
         {
+
             baseCall("reqUse", index, Player.iso.Position);
         }
         public void ReqBuy(byte id,byte price)
@@ -51,6 +52,14 @@
         public void set_bag(object old)
         {
             Event.fireOut("set_Bag", this);
+        }
+        public void OnWater()
+        {
+            Event.fireOut("OnWater", this);
+        }
+        public void OnAddCoin(int value, Vector3 position)
+        {
+            Event.fireOut("OnAddCoin", value, position);
         }
     }
 }

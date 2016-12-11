@@ -13,6 +13,7 @@ public class ShopMenu : MonoBehaviour {
     // Use this for initialization
     void Awake () {
         KBEngine.Event.registerOut("OpenShop", this, "RunShop");
+        KBEngine.Event.registerOut("CloseShop", this, "CloseShop");
     }
     
     public void RunShop(Shop shop)

@@ -34,5 +34,14 @@
         {
             Event.fireOut("set_IsWater", this);
         }
+
+        public void ReqWater()
+        {
+            cellCall("reqWater");
+        }
+        public void ReqTake()
+        {
+            cellCall("reqTake");
+        }
     }
 }

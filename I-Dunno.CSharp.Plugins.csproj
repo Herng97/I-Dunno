@@ -240,6 +240,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\FX Mega Pack\FX Mega Pack - Readme.txt" />
+    <None Include="Assets\Fronts\Bitmap\BMfont.fnt" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\res\values\values.xml" />
     <None Include="Assets\Plugins\Demigiant\DOTween\DOTween.XML" />

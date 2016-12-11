@@ -16,6 +16,7 @@ public class BagUI : MonoBehaviour
     {
         set_Bag((KBEngine.Avatar)KBEngineApp.app.player());
         KBEngine.Event.registerOut("set_Bag", this, "set_Bag");
+        KBEngine.Event.registerOut("CloseBag", this, "CloseBag");
     }
     public void RunBag()
     {

@@ -5,6 +5,7 @@ using Com.LuisPedroFonseca.ProCamera2D;
 
 public class player : MonoBehaviour
 {
+    public ParticleSystem WaterEffect;
 
     public IsoObject iso;
     public KBEngine.Avatar entity;
@@ -21,44 +22,47 @@ public class player : MonoBehaviour
             GPS = GameObject.Find("Canvas").GetComponent<GpsSystem>();
         }
     }
-
+    public Vector3 position;
     // Update is called once per frame
     void Update()
     {
+
+        if (iso.Position == position)
+        {
+            Anim.SetBool("isWalk", false);
+        }
+        else
+        {
+            Vector3 target = Vector3.MoveTowards(iso.Position, position, 1.8f * Time.deltaTime);
+            Anim.SetBool("isWalk", true);
+            Anim.SetFloat("x", target.x - iso.Position.x);
+            Anim.SetFloat("y", target.y - iso.Position.y);
+
+            iso.Position = target;
+        }
         if (entity.isPlayer())
         {
-
-            if (GPS.GetVector3() != new Vector3(0, 0, 1))
-            {
-                if (StartPoint == Vector3.zero)
-                    StartPoint = new Vector3(120.6465792f, 24.1790243f, 1);
-
-                TargetPosition = (GPS.GetVector3() - StartPoint) * 20000;
-                if (Vector3.Distance(iso.Position, TargetPosition) > 5)
-                    iso.Position = TargetPosition;
-                else
-                {
-
-                    if (Vector3.Distance(iso.Position, TargetPosition) < 0.5f)
-                    {
-                        Anim.SetBool("isWalk", false);
-                    }
-                    else
-                    {
-                        Vector3 target = Vector3.MoveTowards(iso.Position, TargetPosition, Time.deltaTime);
-                        Anim.SetBool("isWalk", true);
-                        Anim.SetFloat("x", target.x - iso.Position.x);
-                        Anim.SetFloat("y", target.y - iso.Position.y);
-
-                        iso.Position = target;
-
-                    }
-                }
-                KBEngine.Event.fireIn("UpdatePlayer", iso.Position);
-            }
-
-
+            KBEngine.Event.fireIn("UpdatePlayer", iso.Position);
         }
 
+
+    }
+
+    public void OnWater()
+    {
+
+        WaterEffect.Play();
+        if (entity.isPlayer())
+        {
+            RaycastHit[] hit = Physics.SphereCastAll(IsoObject.projectionMatrix.MultiplyPoint(iso.Position - Vector3.back), 3, (Isometric.vectorToIsoDirection(IsoDirection.Up)), 3);
+            print(hit.Length);
+            for (int i = 0; i < hit.Length; i++)
+            {
+                if (hit[i].transform.tag == "Plant")
+                {
+                    hit[i].transform.GetComponent<PlantUnit>().Plant.ReqWater();
+                }
+            }
+        }
     }
 }

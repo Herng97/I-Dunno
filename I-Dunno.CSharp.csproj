@@ -87,11 +87,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BagItem.cs" />
-    <Compile Include="Assets\BagUI.cs" />
     <Compile Include="Assets\Floor.cs" />
     <Compile Include="Assets\GpsSystem.cs" />
-    <Compile Include="Assets\List_Item_Coin.cs" />
+    <Compile Include="Assets\MoveControl.cs" />
     <Compile Include="Assets\PlantUnit.cs" />
     <Compile Include="Assets\Scripts\Login\Client.cs" />
     <Compile Include="Assets\Scripts\Login\Login.cs" />
@@ -99,8 +97,11 @@
     <Compile Include="Assets\Scripts\Model\Avatar.cs" />
     <Compile Include="Assets\Scripts\Model\Plant.cs" />
     <Compile Include="Assets\Scripts\Model\Shop.cs" />
-    <Compile Include="Assets\ShopItems.cs" />
-    <Compile Include="Assets\ShopMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\BagItem.cs" />
+    <Compile Include="Assets\Scripts\UI\BagUI.cs" />
+    <Compile Include="Assets\Scripts\UI\GetCoin.cs" />
+    <Compile Include="Assets\Scripts\UI\ShopItems.cs" />
+    <Compile Include="Assets\Scripts\UI\ShopMenu.cs" />
     <Compile Include="Assets\ShopUnit.cs" />
     <Compile Include="Assets\ShowGPS.cs" />
     <Compile Include="Assets\World.cs" />
@@ -108,6 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\FX Mega Pack\FX Mega Pack - Readme.txt" />
+    <None Include="Assets\Fronts\Bitmap\BMfont.fnt" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\res\values\values.xml" />
     <None Include="Assets\Plugins\Demigiant\DOTween\DOTween.XML" />

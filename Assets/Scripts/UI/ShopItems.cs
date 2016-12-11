@@ -16,6 +16,7 @@ public class ShopItems : MonoBehaviour {
     public void Buy()
     {
         ((KBEngine.Avatar)KBEngineApp.app.player()).ReqBuy((byte)id,(byte)price);
+        KBEngine.Event.fireOut("CloseShop");
     }
 	
 }

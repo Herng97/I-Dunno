@@ -13,7 +13,7 @@ public class BagItem : MonoBehaviour {
     public void Use()
     {
         ((KBEngine.Avatar)KBEngineApp.app.player()).ReqUse(Index);
-
+        KBEngine.Event.fireOut("CloseBag");
     }
 
 }
