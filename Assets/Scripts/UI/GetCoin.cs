@@ -6,8 +6,9 @@ using System.Collections.Generic;
 
 public class GetCoin : MonoBehaviour {
 
-    public Text BCoinText;
-    public Text SCoinText;
+    public Text BagCoinText;
+    public Text ShopCoinText;
+    public Text InterfaceCoinText;
     // Use this for initialization
     void Start()
     {
@@ -16,8 +17,9 @@ public class GetCoin : MonoBehaviour {
     }
     public void set_Coin(KBEngine.Avatar avatar)
     {
-        BCoinText.text = avatar.Coin.ToString();
-        SCoinText.text = avatar.Coin.ToString();
+        BagCoinText.text = avatar.Coin.ToString();
+        ShopCoinText.text = avatar.Coin.ToString();
+        InterfaceCoinText.text = avatar.Coin.ToString();
 
     }
 

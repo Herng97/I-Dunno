@@ -104,6 +104,7 @@
   <ItemGroup>
     <Compile Include="Assets\Floor.cs" />
     <Compile Include="Assets\GpsSystem.cs" />
+    <Compile Include="Assets\MoveControl.cs" />
     <Compile Include="Assets\PlantUnit.cs" />
     <Compile Include="Assets\Scripts\Login\Client.cs" />
     <Compile Include="Assets\Scripts\Login\Login.cs" />
@@ -123,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\FX Mega Pack\FX Mega Pack - Readme.txt" />
+    <None Include="Assets\Fronts\Bitmap\BMfont.fnt" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\res\values\values.xml" />
     <None Include="Assets\Plugins\Demigiant\DOTween\DOTween.XML" />
