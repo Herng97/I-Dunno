@@ -23,7 +23,9 @@
 
         public byte Id { get { return (byte)getDefinedProperty("Id"); } }
         public byte Level { get { return (byte)getDefinedProperty("level"); } }
+        public byte MaxLevel { get { return (byte)getDefinedProperty("maxStage"); } }
         public bool IsWater { get { return System.Convert.ToBoolean(getDefinedProperty("isWater")); } }
+        public bool OtherTake { get { return System.Convert.ToBoolean(getDefinedProperty("otherTake")); } }
 
         public void set_level(object old)
         {
@@ -33,6 +35,11 @@
         public void set_isWater(object old)
         {
             Event.fireOut("set_IsWater", this);
+        }
+
+        public void set_otherTake(object old)
+        {
+            Event.fireOut("set_otherTake", this);
         }
 
         public void ReqWater()

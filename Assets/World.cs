@@ -16,6 +16,7 @@ public class World : MonoBehaviour
         KBEngine.Event.registerOut("updatePosition", this, "updatePosition");
         KBEngine.Event.registerOut("set_IsWater", this, "set_IsWater");
         KBEngine.Event.registerOut("set_Level", this, "set_Level");
+        KBEngine.Event.registerOut("set_otherTake", this, "set_otherTake");
         KBEngine.Event.registerOut("OnWater", this, "OnWater");
         KBEngine.Event.registerOut("OnAddCoin", this, "OnAddCoin");
         int[] keys = new int[KBEngineApp.app.entities.Keys.Count + 10];
@@ -59,6 +60,10 @@ public class World : MonoBehaviour
         obj.transform.DOScale(new Vector3(0.003f, 0.003f, 1f), 1f).SetEase(Ease.OutElastic);
         obj.transform.DOMoveY(obj.transform.position.y + 0.3f, 2f).SetEase(Ease.OutCubic);
 
+    }
+    public void set_otherTake(KBEngine.Plant plant)
+    {
+        plant.Unit.Stolen.gameObject.SetActive(plant.OtherTake);
     }
     public void set_IsWater(KBEngine.Plant plant)
     {
